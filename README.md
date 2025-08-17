@@ -63,3 +63,6 @@ You can also directly access the data via Google Drive:
 
 **Note**: Ensure a stable network connection to access the Google Drive link. If you encounter regional access restrictions, we recommend using a VPN service compliant with local laws and regulations, or reach out to the corresponding author for alternative data transfer solutions (e.g., WeTransfer, Baidu Cloud, etc.).  
 
+## 5. The workflow of GateDiffST is as follows:
+![The workflow of GateDiffST：](workflow.png)
+
