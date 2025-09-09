@@ -1,15 +1,15 @@
-# GateDiffST: Installation Guide  
-GateDiffST is a gated diffusion framework for spatial transcriptomics analysis, which adopts a two-stage architecture: first, it denoises gene expression profiles through GCN combined with ZINB loss, then uses a diffusion model incorporating gated linear attention and rotary positional encoding to refine the data, and finally averages the refined data with the denoised data to form the final gene expression profile data.
+# TOGAR: Installation Guide  
+TOGAR is a gated diffusion framework for spatial transcriptomics analysis, which adopts a two-stage architecture: first, it denoises gene expression profiles through GCN combined with ZINB loss, then uses a diffusion model incorporating gated linear attention and rotary positional encoding to refine the data, and finally averages the refined data with the denoised data to form the final gene expression profile data.
 It mainly addresses issues such as sparsity and inaccurate spatial domain identification in spatial transcriptomics data, improves the accuracy of cell clustering, can better capture long-range spatial dependencies and spatial expression patterns of genes, and provides support for the analysis of tissue microenvironments and other related fields.
-This document provides the environment setup and installation steps for GateDiffST.  
+This document provides the environment setup and installation steps for TOGAR.  
 
 
 ## 1. Environment Preparation  
-Create a dedicated Conda environment for GateDiffST:  
+Create a dedicated Conda environment for TOGAR:  
 ```bash
 # Create and activate the environment
-conda create -n GateDiffST
-source activate GateDiffST  # For Linux/macOS; use "conda activate GateDiffST" for Windows
+conda create -n TOGAR
+source activate TOGAR  # For Linux/macOS; use "conda activate TOGAR" for Windows
 
 # Install Python
 conda install python=3.8
