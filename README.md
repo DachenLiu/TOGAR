@@ -14,12 +14,12 @@ This document provides the environment setup and installation steps for TOGAR.
 Create a dedicated Conda environment for TOGAR:
 
 ```bash
-# Create and activate the environment
-conda create -n TOGAR
-source activate TOGAR  # For Linux/macOS; use "conda activate TOGAR" for Windows
+# Create environment with Python 3.8
+conda create -n TOGAR python=3.8 -y
 
-# Install Python
-conda install python=3.8
+# Activate the environment
+conda activate TOGAR
+
 ````
 
 ---
