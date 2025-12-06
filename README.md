@@ -102,3 +102,36 @@ Exploratory analysis	> 5,000 spots	Accelerated Version (set_speed='GPU')	15-20 m
 Ultra-large spatial atlas	> 20,000 spots	Accelerated Version (set_speed='GPU')	1-2 hours
 
 Note: The Accelerated Version is set as the default option. For datasets with fewer than 5,000 spots where maximum accuracy is critical, we recommend switching to the Standard Version.
+
+6. Runtime Benchmarks
+
+The following table presents the runtime comparison between the Standard Version and Accelerated Version across various datasets. All tests were conducted on the same hardware configuration (detailed specifications available in the repository).
+
+Dataset	Spots	Genes	Standard Version	Accelerated Version	Speedup
+151507	4,226	33,538	3h 51min	17min	~13.6×
+151508	4,384	33,538	3h 53min	18min	~13.0×
+151509	4,789	33,538	4h 20min	19min	~13.7×
+151510	4,634	33,538	4h 16min	19min	~13.5×
+151669	3,661	33,538	3h 17min	15min	~13.1×
+151670	3,498	33,538	3h 13min	14min	~13.8×
+151671	4,110	33,538	3h 49min	16min	~14.3×
+151672	4,015	33,538	3h 42min	16min	~13.9×
+151673	3,639	33,538	3h 19min	15min	~13.3×
+151674	3,673	33,538	3h 13min	15min	~12.9×
+151675	3,592	33,538	3h 20min	14min	~14.3×
+151676	3,460	33,538	3h 06min	14min	~13.3×
+Human Breast Cancer	3,798	36,601	4h 07min	16min	~15.4×
+CID4465	1,211	17,957	1h 12min	6min	~12.0×
+E9.5_E2S2	4,356	24,107	5h 14min	18min	~17.4×
+E9.5_E2S3	5,059	24,238	6h 01min	21min	~17.2×
+Mouse Olfactory Bulb	21,724	21,220	19h 50min	1h 20min	~14.9×
+
+Key Observations:
+
+The Accelerated Version achieves 12-17× speedup across all datasets while maintaining comparable performance
+
+For ultra-large datasets (>20,000 spots), the acceleration effect is particularly significant
+
+Average runtime reduction: from 3.5-4 hours to 15-20 minutes for standard-sized datasets
+
+7. The workflow of GateDiffST is as follows: ![The workflow of GateDiffST：](workflow.png)
