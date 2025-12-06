@@ -172,6 +172,3 @@ The following table presents the runtime comparison between the Standard Version
 ---
 
 **For questions or issues, please contact the corresponding author or open an issue in the GitHub repository.**
-
-```
-```
