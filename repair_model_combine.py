@@ -444,7 +444,7 @@ def repair(adata, df, device, save_path='example.csv',set_speed = 'GPU'):
     
     total_epochs = 50
     channels = 1
-    batch_size = 64 
+    batch_size = 128  # 根据GPU内存调整
     lr = 1e-4
 
     print("Initializing model...")
