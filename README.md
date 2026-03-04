@@ -162,7 +162,7 @@ The following table presents the runtime comparison between the Standard Version
 * The Accelerated Version achieves **12-17× speedup** across all datasets while maintaining comparable performance
 * For ultra-large datasets (>20,000 spots), the acceleration effect is particularly significant
 * Average runtime reduction: from **3.5-4 hours** to **15-20 minutes** for standard-sized datasets
-GPU -------  RTX 4080Super (32G)
+* GPU ------->>  RTX 4080Super (32G)
 ---
 
 ## 7. The Workflow of TOGAR
